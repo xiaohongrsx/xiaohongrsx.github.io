@@ -1,7 +1,7 @@
 #import "../../config.typ": *
 
 #set page(height: auto, width: 24cm)
-#set text(16pt, font: ("IBM Plex Sans SC"), lang: "zh")
+#set text(16pt, font: "IBM Plex Sans SC", lang: "zh")
 #show raw: text.with(font: ("Zed Plex Mono", "IBM Plex Sans SC"))
 #show math.equation: set text(16pt)
 #set table(inset: 9pt)
@@ -11,7 +11,8 @@
   description: "本文主要介绍在 Carbon Typst Blog 中配置文件的作用和使用方法，以及如何通过配置文件来定制博客的外观和功能。",
   tags: ("配置指南",),
   category: "博客的构建和调整",
-  date: datetime(year: 2026, month: 3, day: 18)
+  date: datetime(year: 2026, month: 3, day: 18),
+  hidden: true,
 )
 
 本文主要介绍 `config.typ` 和 `site.config.json` 这两个配置文件的作用和使用方法，以及如何通过它们来定制 Carbon Typst Blog 的外观和功能。
@@ -28,7 +29,7 @@
 
 // 定义页脚内容，可以在这里添加版权信息、联系方式等
 #let footer-content = [
-  2026 \~ Present Carbon Typst Blog
+  2026 \~ Shixin Ren 任世鑫
 ]
 
 // 定义标签的样式和图标，可以根据需要添加更多的标签选项
@@ -68,7 +69,7 @@
   ),
   // 自定义 JavaScript 文件，可以在这里添加你自己的脚本来增强博客的功能
   custom-script: (
-    
+
   )
 )
 

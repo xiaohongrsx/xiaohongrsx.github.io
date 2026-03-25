@@ -1,7 +1,7 @@
-#import "lib/typ2html/typ2html.typ" : *
+#import "lib/typ2html/typ2html.typ": *
 
 #let footer-content = [
-  2026 \~ Present    Carbon Typst Blog
+  2026 \~ Present Shixin Ren 任世鑫
 ]
 
 #let tag-options = (
@@ -15,24 +15,22 @@
 #let render-tag-card = render-tag-card.with(tag-options: tag-options)
 
 #let templates = make-templates(
-  site-title: "Carbon Typst Blog",
+  site-title: "Ren Shixin's Blog",
   header-links: (
     "/": "首页",
+    "/posts/": "文章",
     "/categories/": "分类",
     "/tags/": "标签",
     "/archive/": "归档",
-    "/about/": "关于",
   ),
-  title: "Typst Blog",
+  title: "Renshixin Blog",
   lang: "zh",
   footer-content: footer-content,
   tag-options: tag-options,
   custom-css: (
     "/assets/custom.css",
   ),
-  custom-script: (
-    
-  )
+  custom-script: (),
 )
 
 #let template-post = templates.post

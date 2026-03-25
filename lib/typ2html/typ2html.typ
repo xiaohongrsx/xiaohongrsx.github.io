@@ -1,9 +1,12 @@
-#import "block.typ": quote, note, success, warning, error
-#import "tag.typ": render-tag-link, render-tag-card
+#import "block.typ": error, note, quote, success, warning
+#import "tag.typ": render-tag-card, render-tag-link
 #import "breadcrumb.typ": render-page-breadcrumb
 #import "pagination.typ": render-pagination-nav
-#import "sys-input.typ": query-input, query-posts, query-slugs, query-route-tag, query-route-category, query-route-page, query-route-page-size, query-tag-slug-of, query-category-slug-of, query-page-bounds
-#import "layout.typ": make-nav, make-header, make-post-header, make-post-footer, make-page-footer
+#import "sys-input.typ": (
+  query-category-slug-of, query-input, query-page-bounds, query-posts, query-route-category, query-route-page,
+  query-route-page-size, query-route-tag, query-slugs, query-tag-slug-of,
+)
+#import "layout.typ": make-header, make-nav, make-page-footer, make-post-footer, make-post-header
 #import "divider.typ": divider
 #import "html-guard.typ": html-guard
 #import "math.typ": auto-frame
@@ -94,85 +97,88 @@
   header-node: none,
   main-node: none,
   footer-node: none,
-  content
+  content,
 ) = context {
-  html-guard(() => {
-    import "raw.typ": template-raw
-    import "math.typ": template-math
-    import "refs.typ": template-refs
-    import "notes.typ": template-notes
-    import "links.typ": template-links
-    import "figures.typ": template-figures
-    import "table.typ": template-table
+  html-guard(
+    () => {
+      import "raw.typ": template-raw
+      import "math.typ": template-math
+      import "refs.typ": template-refs
+      import "notes.typ": template-notes
+      import "links.typ": template-links
+      import "figures.typ": template-figures
+      import "table.typ": template-table
 
-    show: template-raw
-    show: template-math
-    show: template-refs
-    show: template-notes
-    show: template-figures
-    show: template-links
-    show: template-table
+      show: template-raw
+      show: template-math
+      show: template-refs
+      show: template-notes
+      show: template-figures
+      show: template-links
+      show: template-table
 
-    set text(lang: lang)
+      set text(lang: lang)
 
-    html.html(
-      lang: lang,
-      {
-        html.head({
-          metadata(
-            title: title,
-            author: author,
-            description: if include-description-meta { description } else { none },
-            lang: lang,
-            date: date-meta,
-            website-title: site-title,
-            website-url: website-url,
-            canonical-path: canonical-path,
-            include-rss-link: include-rss-link,
-            feed-path: feed-path,
-          )
+      html.html(
+        lang: lang,
+        {
+          html.head({
+            metadata(
+              title: title,
+              author: author,
+              description: if include-description-meta { description } else { none },
+              lang: lang,
+              date: date-meta,
+              website-title: site-title,
+              website-url: website-url,
+              canonical-path: canonical-path,
+              include-rss-link: include-rss-link,
+              feed-path: feed-path,
+            )
 
-          if head-extra != none {
-            head-extra
-          }
-
-          html.link(rel: "preconnect", href: "https://cdn.jsdelivr.net")
-          html.link(rel: "dns-prefetch", href: "https://cdn.jsdelivr.net")
-
-          make-theme-preload-script()
-
-          for (css-link) in css {
-            html.link(rel: "stylesheet", href: css-link)
-          }
-          for (css-link) in custom-css {
-            html.link(rel: "stylesheet", href: css-link)
-          }
-          for (js-src) in scripts {
-            html.script(type: "module", src: js-src)
-          }
-          for (js-src) in custom-script {
-            html.script(type: "module", src: js-src)
-          }
-        })
-
-        html.body({
-          html.div(class: "page-shell", {
-            if header-node != none {
-              header-node
+            if head-extra != none {
+              head-extra
             }
-            if main-node != none {
-              main-node
+
+            html.link(rel: "preconnect", href: "https://cdn.jsdelivr.net")
+            html.link(rel: "dns-prefetch", href: "https://cdn.jsdelivr.net")
+
+            make-theme-preload-script()
+
+            for (css-link) in css {
+              html.link(rel: "stylesheet", href: css-link)
             }
-            if footer-node != none {
-              footer-node
+            for (css-link) in custom-css {
+              html.link(rel: "stylesheet", href: css-link)
+            }
+            for (js-src) in scripts {
+              html.script(type: "module", src: js-src)
+            }
+            for (js-src) in custom-script {
+              html.script(type: "module", src: js-src)
             }
           })
-        })
-      },
-    )
-  }, fallback: () => {
-    content
-  })
+
+          html.body({
+            html.div(class: "page-shell", {
+              if header-node != none {
+                header-node
+              }
+              if main-node != none {
+                main-node
+              }
+              if footer-node != none {
+                footer-node
+              }
+            })
+          })
+        },
+      )
+    },
+    fallback: () => {
+      content
+    },
+  )
 }
 
 #let typ2html-post(
@@ -180,7 +186,6 @@
   site-title: "Typst Blog",
   title: "Carbon & Typst Blog",
   lang: "en",
-
   css: (
     "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
     "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
@@ -196,15 +201,14 @@
   custom-script: (),
   footer-content: none,
   tag-options: (:),
-
   tags: (),
   category: "",
   date: datetime.today(),
   description: "",
+  hidden: false,
   website-url: query-input("website-url", default: none),
   author: query-input("author", default: none),
   emit-post-meta: query-input("emit-post-meta", default: none),
-
   content,
 ) = {
   let json-escape(value) = {
@@ -220,7 +224,28 @@
   let date-string = date.display(post-date-storage-format)
   let date-string-localized = format-post-date(date)
   let tags-json = "[" + tags.map(tag => json-string(tag)).join(",") + "]"
-  let post-meta-json = "{" + "\"title\":" + json-string(title) + "," + "\"description\":" + json-string(description) + "," + "\"category\":" + json-string(category) + "," + "\"tags\":" + tags-json + "," + "\"date\":" + json-string(date-string) + "}"
+  let hidden-json = if hidden { "true" } else { "false" }
+  let post-meta-json = (
+    "{"
+      + "\"title\":"
+      + json-string(title)
+      + ","
+      + "\"description\":"
+      + json-string(description)
+      + ","
+      + "\"category\":"
+      + json-string(category)
+      + ","
+      + "\"tags\":"
+      + tags-json
+      + ","
+      + "\"date\":"
+      + json-string(date-string)
+      + ","
+      + "\"hidden\":"
+      + hidden-json
+      + "}"
+  )
 
   if emit-post-meta != none {
     post-meta-json
@@ -232,7 +257,9 @@
     let current-index = matched-indexes.at(0, default: none)
 
     let previous-post = if current-index == none or current-index == 0 { none } else { all-posts.at(current-index - 1) }
-    let next-post = if current-index == none or current-index + 1 >= all-posts.len() { none } else { all-posts.at(current-index + 1) }
+    let next-post = if current-index == none or current-index + 1 >= all-posts.len() { none } else {
+      all-posts.at(current-index + 1)
+    }
 
     typ2html-base(
       header-links: header-links,
@@ -260,7 +287,7 @@
         })
       }),
       footer-node: make-post-footer(previous-post: previous-post, next-post: next-post, footer-content: footer-content),
-      content
+      content,
     )
   }
 }
@@ -318,7 +345,7 @@
     header-node: html-guard(() => make-header(header-links, site-title)),
     main-node: html-guard(() => page-wrapper(content)),
     footer-node: html-guard(() => make-page-footer(footer-content: footer-content)),
-    content
+    content,
   )
 }
 
@@ -334,7 +361,6 @@
   website-url: query-input("website-url", default: none),
   author: query-input("author", default: none),
   tag-options: (:),
-
   post-css: (
     "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
     "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
@@ -346,7 +372,6 @@
     "/assets/core/theme.js",
     "/assets/core/post-nav-switch.js",
   ),
-
   page-css: (
     "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
     "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
@@ -398,5 +423,5 @@
     description: description,
     website-url: website-url,
     author: author,
-  )
+  ),
 )

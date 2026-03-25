@@ -1,10 +1,15 @@
-/*
-  You can add custom CSS here. It will be applied after all other CSS, so you can use it to override styles in the main CSS file.
-  To apply the custom CSS and script, add them in the #show rules in the theme configuration file (config.typ) like this:
+.homepage-header-carbon {
+	background: linear-gradient(to bottom, #e63946 30%, transparent) !important;
+	background-clip: text !important;
+	color: transparent !important;
+}
 
-  #show: template-post.with(
-    ...
-    custom-css: ("/assets/custon.css", ),
-    custom-script: ("/assets/custom.js", )
-  )
-*/
+.homepage-header-typst {
+	background: linear-gradient(to bottom, #c1121f 30%, transparent) !important;
+	background-clip: text !important;
+	color: transparent !important;
+}
+
+.homepage-header-blog {
+	color: #660874 !important;
+}

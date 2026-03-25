@@ -1,7 +1,7 @@
 #import "../../config.typ": *
 
 #set page(height: auto, width: 24cm)
-#set text(16pt, font: ("IBM Plex Sans SC"), lang: "zh")
+#set text(16pt, font: "IBM Plex Sans SC", lang: "zh")
 #show raw: text.with(font: ("Zed Plex Mono", "IBM Plex Sans SC"))
 #show math.equation: set text(16pt)
 #set table(inset: 9pt)
@@ -11,7 +11,8 @@
   description: "本文主要介绍在 Carbon Typst Blog 中添加和编写博客文章的步骤和注意事项。",
   tags: ("Typst", "写作指南"),
   category: "如何编写博客文章",
-  date: datetime(year: 2026, month: 3, day: 18)
+  date: datetime(year: 2026, month: 3, day: 18),
+  hidden: true,
 )
 
 = 创建新文章
@@ -80,5 +81,5 @@
 
 #figure(
   image("/assets/image.png"),
-  caption: [本文的编写示例图]
+  caption: [本文的编写示例图],
 )

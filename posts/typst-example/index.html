@@ -7,14 +7,14 @@
     <meta name="generator" content="Typst">
     <title>Typst 功能展示</title>
     <meta name="date" content="2026-03-18">
-    <link rel="canonical" href="https://example.com/posts/typst-example/">
+    <link rel="canonical" href="https://xiaohongrsx.github.io/posts/typst-example/">
     <meta property="og:title" content="Typst 功能展示">
     <meta property="og:type" content="article">
     <meta name="description" content="本文主要展示了一些常用的 Typst 语法，并给出一些增强功能。">
     <meta property="og:description" content="本文主要展示了一些常用的 Typst 语法，并给出一些增强功能。">
-    <meta property="og:url" content="https://example.com/posts/typst-example/">
-    <meta name="author" content="Carbon Typst Blog">
-    <meta property="article:author" content="Carbon Typst Blog">
+    <meta property="og:url" content="https://xiaohongrsx.github.io/posts/typst-example/">
+    <meta name="author" content="Ren Shixin">
+    <meta property="article:author" content="Ren Shixin">
     <meta name="twitter:card" content="summary">
     <meta name="language" content="zh">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -38,18 +38,18 @@
           <div class="nav-shell">
             <nav>
               <button class="nav-menu-switch" type="button" aria-label="打开导航"></button>
-              <div class="nav-title">Carbon Typst Blog</div>
+              <div class="nav-title">Ren Shixin's Blog</div>
               <div class="nav-body has-post-title">
                 <div class="nav-body-upper">
-                  <div class="nav-body-upper-title">Carbon Typst Blog</div>
-                  <div class="nav-body-upper-links"><a href="/">首页</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archive/">归档</a><a href="/about/">关于</a></div>
+                  <div class="nav-body-upper-title">Ren Shixin's Blog</div>
+                  <div class="nav-body-upper-links"><a href="/">首页</a><a href="/posts/">文章</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archive/">归档</a></div>
                 </div>
                 <div class="nav-body-lower">Typst 功能展示</div>
               </div>
               <button class="nav-theme-switch" type="button" aria-label="切换主题"></button>
             </nav>
             <div class="nav-sidebar-backdrop"></div>
-            <aside class="nav-sidebar"><a class="nav-sidebar-item" href="/">首页</a><a class="nav-sidebar-item" href="/categories/">分类</a><a class="nav-sidebar-item" href="/tags/">标签</a><a class="nav-sidebar-item" href="/archive/">归档</a><a class="nav-sidebar-item" href="/about/">关于</a></aside>
+            <aside class="nav-sidebar"><a class="nav-sidebar-item" href="/">首页</a><a class="nav-sidebar-item" href="/posts/">文章</a><a class="nav-sidebar-item" href="/categories/">分类</a><a class="nav-sidebar-item" href="/tags/">标签</a><a class="nav-sidebar-item" href="/archive/">归档</a></aside>
           </div>
         </div>
       </header>
@@ -60,48 +60,6 @@
       </div>
       <article>
         <section>
-          <h2>基础功能</h2>
-          <p>Typst 内置了基础的文字修饰功能，对应的代码和效果如下表所示。</p>
-          <div class="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>代码</th>
-                  <th>效果</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code class="language-typ">*粗体*</code></td>
-                  <td><strong>粗体</strong></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">_斜体_</code></td>
-                  <td><em>斜体</em></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">#underline[下划线]</code></td>
-                  <td><span style="text-decoration: underline">下划线</span></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">#strike[删除线]</code></td>
-                  <td><s>删除线</s></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">#overline[上划线]</code></td>
-                  <td><span style="text-decoration: overline">上划线</span></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">#super[上标]文本#sub[下标]</code></td>
-                  <td><sup>上标</sup>文本<sub>下标</sub></td>
-                </tr>
-                <tr>
-                  <td><code class="language-typ">#highlight[高亮标记]</code></td>
-                  <td><mark>高亮标记</mark></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <p>你可以通过粘贴 URL 或者 <code class="language-typ">#link</code> 函数创建一个链接：</p>
           <div class="table-scroll">
             <table>
@@ -131,7 +89,7 @@
 - 代码块
   - 内联代码块
   - 块级代码块
-  
+
 + 这是有序列表的第 1 项。
 3. 可以使用任意数字创建一个新的有序列表，此时
 + 序号会从上次出现的有序列表项继续递增，这里就是 4。
@@ -293,17 +251,14 @@
 #cmarker.render(md-content, math: mitex, scope: scope)</code></pre>
           <p>更详细的使用示例请参考 <code class="language-text">cmarker</code> 的官方文档。</p>
           <div class="post-meta">
-            <div class="post-tag"><span class="post-tag-desc">标签</span><span class="post-tag-group"><a class="post-tag-item tag-item-with-icon" href="/tags/typst/" style="--tag-background:var(--tag-background-teal);--tag-color:var(--tag-color-teal);--tag-background-hover:var(--tag-hover-teal);--tag-border:var(--tag-border-teal);--tag-border-hover:var(--tag-border-teal);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/pen.svg&quot;);"></span><span class="tag-content"><span>Typst</span></span></a><a class="post-tag-item tag-item-with-icon" href="/tags/写作指南/" style="--tag-background:var(--tag-background-blue);--tag-color:var(--tag-color-blue);--tag-background-hover:var(--tag-hover-blue);--tag-border:var(--tag-border-blue);--tag-border-hover:var(--tag-border-blue);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/edit.svg&quot;);"></span><span class="tag-content"><span>写作指南</span></span></a></span></div>
+            <div class="post-tag"><span class="post-tag-desc">标签</span><span class="post-tag-group"><a class="post-tag-item tag-item-with-icon" href="/tags/Typst/" style="--tag-background:var(--tag-background-teal);--tag-color:var(--tag-color-teal);--tag-background-hover:var(--tag-hover-teal);--tag-border:var(--tag-border-teal);--tag-border-hover:var(--tag-border-teal);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/pen.svg&quot;);"></span><span class="tag-content"><span>Typst</span></span></a><a class="post-tag-item tag-item-with-icon" href="/tags/写作指南/" style="--tag-background:var(--tag-background-blue);--tag-color:var(--tag-color-blue);--tag-background-hover:var(--tag-hover-blue);--tag-border:var(--tag-border-blue);--tag-border-hover:var(--tag-border-blue);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/edit.svg&quot;);"></span><span class="tag-content"><span>写作指南</span></span></a></span></div>
             <div class="post-time"><span class="post-time-desc">日期</span><span>2026 年 3 月 18 日</span></div>
             <div class="post-category"><span class="post-category-desc">分类</span><a class="post-category-link" href="/categories/如何编写博客文章/">如何编写博客文章</a></div>
           </div>
         </section>
       </article>
-      <div class="post-neighbors">
-        <div class="post-neighbors-inner"><a class="post-neighbor" href="/posts/how-to-write-a-post/"><div class="post-neighbor-top">上一篇</div><p class="post-neighbor-title">如何编写一篇博客文章</p></a></div>
-      </div>
       <footer>
-        <div class="post-footer">2026 ~ Present Carbon Typst Blog</div>
+        <div class="post-footer">2026 ~ Present Shixin Ren 任世鑫</div>
       </footer>
     </div>
   </body>

@@ -3,3 +3,5 @@ _site-preview/
 .vscode/
 .typ-blog-cache/
 node_modules/
+cv/
+*.zip

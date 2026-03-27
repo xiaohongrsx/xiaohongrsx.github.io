@@ -148,7 +148,7 @@
   html.div(class: "posts-grid", {
     for i in range(end-index, start-index - 1, step: -1) {
       let post = matched.at(i)
-      let date-parts = post.date.split("-")
+      let date-parts = post.date.split("T").at(0).split("-")
       let post-date-text = if date-parts.len() == 3 {
         format-post-date(datetime(
           year: int(date-parts.at(0)),

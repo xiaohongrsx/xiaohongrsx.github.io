@@ -5,12 +5,12 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Fri, 27 Mar 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 27 Mar 2026 14:00:00 GMT</lastBuildDate>
   <item>
     <title>论文阅读：ARCQuant — 用增强残差通道提升 NVFP4 量化精度</title>
     <link>https://xiaohongrsx.github.io/posts/arcquant-paper-reading/</link>
     <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/arcquant-paper-reading/</guid>
-    <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+    <pubDate>Fri, 27 Mar 2026 14:00:00 GMT</pubDate>
     <description>ARCQuant 论文阅读笔记：如何在统一 NVFP4 精度下，通过两次量化达到 FP8 级别的精度，同时保持硬件兼容性。</description>
     <category domain="category">论文阅读笔记</category>
     <category domain="tag">论文阅读</category>
@@ -21,7 +21,7 @@
     <title>论文阅读：MSA — 将 LLM 记忆扩展到 1 亿 Token 的稀疏注意力框架</title>
     <link>https://xiaohongrsx.github.io/posts/msa-paper-reading/</link>
     <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/msa-paper-reading/</guid>
-    <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+    <pubDate>Fri, 27 Mar 2026 10:00:00 GMT</pubDate>
     <description>Memory Sparse Attention (MSA) 论文的深度阅读笔记，包含方法拆解、推理流程分析和批判性思考。</description>
     <category domain="category">论文阅读笔记</category>
     <category domain="tag">论文阅读</category>

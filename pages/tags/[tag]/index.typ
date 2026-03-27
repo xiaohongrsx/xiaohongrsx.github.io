@@ -1,4 +1,4 @@
-#import "../../../config.typ": * 
+#import "../../../config.typ": *
 #let posts = query-posts()
 #let current = query-route-tag()
 #let route-page = query-route-page()
@@ -30,7 +30,7 @@
   html.div(class: "posts-grid", {
     for i in range(end-index, start-index - 1, step: -1) {
       let post = matched.at(i)
-      let date-parts = post.date.split("-")
+      let date-parts = post.date.split("T").at(0).split("-")
       let post-date-text = if date-parts.len() == 3 {
         format-post-date(datetime(
           year: int(date-parts.at(0)),
@@ -40,27 +40,31 @@
       } else {
         post.date
       }
-      html.elem("div", attrs: (
-        class: "post-card",
-        "data-post-url": post.url,
-      ), {
-        html.div(class: "post-title", {
-          html.a(class: "post-card-link", href: post.url, post.title)
-        })
-        html.div(class: "post-description", {
-          post.description
-        })
-        if post.tags.len() != 0 {
-          html.div(class: "post-card-tags", {
-            for tag in post.tags {
-              render-tag-link(tag, href: "/tags/" + query-tag-slug-of(tag) + "/")
-            }
+      html.elem(
+        "div",
+        attrs: (
+          class: "post-card",
+          "data-post-url": post.url,
+        ),
+        {
+          html.div(class: "post-title", {
+            html.a(class: "post-card-link", href: post.url, post.title)
           })
-        }
-        html.div(class: "post-date", {
-          post-date-text
-        })
-      })
+          html.div(class: "post-description", {
+            post.description
+          })
+          if post.tags.len() != 0 {
+            html.div(class: "post-card-tags", {
+              for tag in post.tags {
+                render-tag-link(tag, href: "/tags/" + query-tag-slug-of(tag) + "/")
+              }
+            })
+          }
+          html.div(class: "post-date", {
+            post-date-text
+          })
+        },
+      )
     }
   })
 

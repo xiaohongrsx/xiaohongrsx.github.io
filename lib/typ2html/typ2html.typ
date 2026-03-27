@@ -17,7 +17,14 @@
   "(function(){var key='typ-blog-theme';var theme=null;try{var stored=localStorage.getItem(key);if(stored==='gray-10'||stored==='gray-90'||stored==='gray-100'||stored==='white'){theme=stored;}}catch(_){ }if(!theme){theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'gray-90':'gray-10';}document.documentElement.setAttribute('data-theme',theme);var bg=theme==='gray-90'?'#262626':theme==='gray-100'?'#161616':theme==='white'?'#ffffff':'#f4f4f4';document.documentElement.style.backgroundColor=bg;})();",
 )
 
-#let post-date-storage-format = "[year]-[month]-[day]"
+#let post-date-storage-format(date) = {
+  let base = date.display("[year]-[month]-[day]")
+  if date.hour() != none {
+    base + "T" + date.display("[hour padding:zero]:[minute padding:zero]:[second padding:zero]")
+  } else {
+    base
+  }
+}
 #let post-date-display-format = "[year] 年 [month padding:none] 月 [day padding:none] 日"
 #let format-post-date(date) = date.display(post-date-display-format)
 
@@ -221,7 +228,7 @@
   }
 
   let json-string(value) = "\"" + json-escape(value) + "\""
-  let date-string = date.display(post-date-storage-format)
+  let date-string = post-date-storage-format(date)
   let date-string-localized = format-post-date(date)
   let tags-json = "[" + tags.map(tag => json-string(tag)).join(",") + "]"
   let hidden-json = if hidden { "true" } else { "false" }

@@ -11,7 +11,7 @@
   description: "ARCQuant 论文阅读笔记：如何在统一 NVFP4 精度下，通过两次量化达到 FP8 级别的精度，同时保持硬件兼容性。",
   tags: ("论文阅读", "LLM", "量化"),
   category: "论文阅读笔记",
-  date: datetime(year: 2026, month: 3, day: 27),
+  date: datetime(year: 2026, month: 3, day: 27, hour: 14, minute: 0, second: 0),
 )
 
 #quote[

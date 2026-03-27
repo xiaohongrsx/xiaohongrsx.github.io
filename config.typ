@@ -9,6 +9,9 @@
   "Typst": ("preset": "teal", "icon": "/assets/icons/pen.svg"),
   "写作指南": ("preset": "blue", "icon": "/assets/icons/edit.svg"),
   "配置指南": ("preset": "green", "icon": "/assets/icons/settings.svg"),
+  "论文阅读": ("preset": "purple", "icon": "/assets/icons/pen.svg"),
+  "LLM": ("preset": "magenta", "icon": "/assets/icons/rocket.svg"),
+  "注意力机制": ("preset": "teal", "icon": "/assets/icons/settings.svg"),
 )
 
 #let render-tag-link = render-tag-link.with(tag-options: tag-options)

@@ -9,7 +9,7 @@
 #show: template-post.with(
   title: "论文阅读：Speculative Speculative Decoding — 消除推测解码的最后一个顺序瓶颈",
   description: "SSD 论文深度阅读笔记：如何通过预推测缓存将草稿生成与验证完全并行化，实现比标准 SD 最多 2 倍、比自回归最多 5 倍的加速。",
-  tags: ("论文阅读", "LLM"),
+  tags: ("论文阅读", "LLM", "推测解码"),
   category: "论文阅读笔记",
   date: datetime(year: 2026, month: 3, day: 28, hour: 18, minute: 0, second: 0),
 )

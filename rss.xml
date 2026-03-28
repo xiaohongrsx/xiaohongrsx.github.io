@@ -5,7 +5,18 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Fri, 27 Mar 2026 14:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 28 Mar 2026 16:00:00 GMT</lastBuildDate>
+  <item>
+    <title>论文阅读：TurboQuant — 近最优失真率的在线向量量化</title>
+    <link>https://xiaohongrsx.github.io/posts/turboquant-paper-reading/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/turboquant-paper-reading/</guid>
+    <pubDate>Sat, 28 Mar 2026 16:00:00 GMT</pubDate>
+    <description>TurboQuant 论文阅读笔记：如何通过随机旋转 + 逐坐标最优标量量化，在 data-oblivious 的在线设置下达到信息论下界 2.7 倍以内的 MSE 和内积失真。</description>
+    <category domain="category">论文阅读笔记</category>
+    <category domain="tag">论文阅读</category>
+    <category domain="tag">LLM</category>
+    <category domain="tag">量化</category>
+  </item>
   <item>
     <title>论文阅读：ARCQuant — 用增强残差通道提升 NVFP4 量化精度</title>
     <link>https://xiaohongrsx.github.io/posts/arcquant-paper-reading/</link>

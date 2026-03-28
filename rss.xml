@@ -5,7 +5,17 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Sat, 28 Mar 2026 16:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Sat, 28 Mar 2026 18:00:00 GMT</lastBuildDate>
+  <item>
+    <title>论文阅读：Speculative Speculative Decoding — 消除推测解码的最后一个顺序瓶颈</title>
+    <link>https://xiaohongrsx.github.io/posts/ssd-paper-reading/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/ssd-paper-reading/</guid>
+    <pubDate>Sat, 28 Mar 2026 18:00:00 GMT</pubDate>
+    <description>SSD 论文深度阅读笔记：如何通过预推测缓存将草稿生成与验证完全并行化，实现比标准 SD 最多 2 倍、比自回归最多 5 倍的加速。</description>
+    <category domain="category">论文阅读笔记</category>
+    <category domain="tag">论文阅读</category>
+    <category domain="tag">LLM</category>
+  </item>
   <item>
     <title>论文阅读：TurboQuant — 近最优失真率的在线向量量化</title>
     <link>https://xiaohongrsx.github.io/posts/turboquant-paper-reading/</link>

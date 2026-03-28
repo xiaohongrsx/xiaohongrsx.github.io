@@ -15,6 +15,7 @@
     <category domain="category">论文阅读笔记</category>
     <category domain="tag">论文阅读</category>
     <category domain="tag">LLM</category>
+    <category domain="tag">推测解码</category>
   </item>
   <item>
     <title>论文阅读：TurboQuant — 近最优失真率的在线向量量化</title>

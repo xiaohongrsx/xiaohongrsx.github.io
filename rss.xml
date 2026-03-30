@@ -5,7 +5,29 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Sat, 28 Mar 2026 18:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 30 Mar 2026 11:30:00 GMT</lastBuildDate>
+  <item>
+    <title>论文阅读：InfLLM-V2 — 把可训练稀疏注意力做成全注意力的“受限版本”</title>
+    <link>https://xiaohongrsx.github.io/posts/infllm-v2-paper-reading/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/infllm-v2-paper-reading/</guid>
+    <pubDate>Mon, 30 Mar 2026 11:30:00 GMT</pubDate>
+    <description>InfLLM-V2 论文阅读笔记：零额外参数、Dense-Sparse Switchable Attention、三阶段块选择与高效 kernel，如何把短序列预训练和平滑的长上下文适配真正打通。</description>
+    <category domain="category">论文阅读笔记</category>
+    <category domain="tag">论文阅读</category>
+    <category domain="tag">LLM</category>
+    <category domain="tag">注意力机制</category>
+  </item>
+  <item>
+    <title>论文阅读：Mamba-3 — 从 SSM 原理出发同时改善质量、能力与效率</title>
+    <link>https://xiaohongrsx.github.io/posts/mamba3-paper-reading/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/mamba3-paper-reading/</guid>
+    <pubDate>Sun, 29 Mar 2026 19:00:00 GMT</pubDate>
+    <description>Mamba-3 论文深度阅读笔记：指数梯形离散化、复值 SSM（数据依赖 RoPE）、MIMO 三大创新如何同时解决次二次方模型的质量、状态跟踪能力和推理效率问题。</description>
+    <category domain="category">论文阅读笔记</category>
+    <category domain="tag">论文阅读</category>
+    <category domain="tag">LLM</category>
+    <category domain="tag">SSM</category>
+  </item>
   <item>
     <title>论文阅读：Speculative Speculative Decoding — 消除推测解码的最后一个顺序瓶颈</title>
     <link>https://xiaohongrsx.github.io/posts/ssd-paper-reading/</link>

@@ -14,6 +14,7 @@
   "注意力机制": ("preset": "teal", "icon": "/assets/icons/settings.svg"),
   "量化": ("preset": "cyan", "icon": "/assets/icons/settings.svg"),
   "推测解码": ("preset": "blue", "icon": "/assets/icons/rocket.svg"),
+  "SSM": ("preset": "green", "icon": "/assets/icons/settings.svg"),
 )
 
 #let render-tag-link = render-tag-link.with(tag-options: tag-options)

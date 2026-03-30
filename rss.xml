@@ -5,7 +5,18 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Mon, 30 Mar 2026 11:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 30 Mar 2026 20:00:00 GMT</lastBuildDate>
+  <item>
+    <title>论文阅读：Log-Linear Attention — 基于 Fenwick 树与层次矩阵的对数线性复杂度注意力机制</title>
+    <link>https://xiaohongrsx.github.io/posts/log-linear-attention-paper-reading/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/log-linear-attention-paper-reading/</guid>
+    <pubDate>Mon, 30 Mar 2026 20:00:00 GMT</pubDate>
+    <description>Log-Linear Attention 论文深度阅读笔记：结构化掩码矩阵统一视角、Fenwick 树分区、HODLR 层次矩阵、分块并行扫描训练算法，如何用 O(log T) 个隐藏状态在效率和表达能力之间取得新平衡。</description>
+    <category domain="category">论文阅读笔记</category>
+    <category domain="tag">论文阅读</category>
+    <category domain="tag">LLM</category>
+    <category domain="tag">注意力机制</category>
+  </item>
   <item>
     <title>论文阅读：InfLLM-V2 — 把可训练稀疏注意力做成全注意力的“受限版本”</title>
     <link>https://xiaohongrsx.github.io/posts/infllm-v2-paper-reading/</link>

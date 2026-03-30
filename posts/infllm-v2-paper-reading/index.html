@@ -362,17 +362,6 @@ for x in mixed_length_sequences:
             <li><strong>第二</strong>，它在短到长适配场景下明显强于 NSA，证明“架构对齐”这件事不是小修小补，而是决定训练能否稳定工作的关键</li>
             <li><strong>第三</strong>，它甚至保留了 dense 模式，在某些长上下文理解评测上 dense 结果还高于 FullAttn 基线，这说明长上下文微调后的模型并没有丢掉短文本或稠密路径能力</li>
           </ol>
-          <h2>我对这篇文章的理解</h2>
-          <p>如果只记一句话，我会记成：</p>
-          <p><strong>InfLLM-V2 的真正创新，是把长上下文稀疏注意力从“外挂的一套复杂结构”，变成了“标准全注意力的可切换稀疏版本”。</strong></p>
-          <p>更具体一点，我觉得它有三层价值：</p>
-          <ol>
-            <li><strong>算法层</strong>：共享 KV 投影、统一 sparse 输出、三阶段块压缩，让稀疏注意力更接近 dense attention</li>
-            <li><strong>训练层</strong>：自然适配“短序列预训练 -> 长序列微调”这一主流范式，不需要架构大改</li>
-            <li><strong>系统层</strong>：没有停留在“理论上更省算力”，而是继续把块选择做成真正能跑快的 kernel</li>
-          </ol>
-          <p>所以这篇文章最打动我的地方，并不是某个单点技巧，而是它非常明确地抓住了一个原则：</p>
-          <p><strong>长上下文 attention 不仅要稀疏、要快，还必须和原始 Transformer 足够像。</strong> 只有这样，它才真的适合拿来训练、拿来部署，而不只是论文里的一个特殊模块。</p>
           <div class="post-meta">
             <div class="post-tag"><span class="post-tag-desc">标签</span><span class="post-tag-group"><a class="post-tag-item tag-item-with-icon" href="/tags/论文阅读/" style="--tag-background:var(--tag-background-purple);--tag-color:var(--tag-color-purple);--tag-background-hover:var(--tag-hover-purple);--tag-border:var(--tag-border-purple);--tag-border-hover:var(--tag-border-purple);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/pen.svg&quot;);"></span><span class="tag-content"><span>论文阅读</span></span></a><a class="post-tag-item tag-item-with-icon" href="/tags/llm/" style="--tag-background:var(--tag-background-magenta);--tag-color:var(--tag-color-magenta);--tag-background-hover:var(--tag-hover-magenta);--tag-border:var(--tag-border-magenta);--tag-border-hover:var(--tag-border-magenta);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/rocket.svg&quot;);"></span><span class="tag-content"><span>LLM</span></span></a><a class="post-tag-item tag-item-with-icon" href="/tags/注意力机制/" style="--tag-background:var(--tag-background-teal);--tag-color:var(--tag-color-teal);--tag-background-hover:var(--tag-hover-teal);--tag-border:var(--tag-border-teal);--tag-border-hover:var(--tag-border-teal);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/settings.svg&quot;);"></span><span class="tag-content"><span>注意力机制</span></span></a></span></div>
             <div class="post-time"><span class="post-time-desc">日期</span><span>2026 年 3 月 30 日</span></div>
@@ -381,7 +370,7 @@ for x in mixed_length_sequences:
         </section>
       </article>
       <div class="post-neighbors">
-        <div class="post-neighbors-inner"><a class="post-neighbor" href="/posts/mamba3-paper-reading/"><div class="post-neighbor-top">上一篇</div><p class="post-neighbor-title">论文阅读：Mamba-3 — 从 SSM 原理出发同时改善质量、能力与效率</p></a></div>
+        <div class="post-neighbors-inner"><a class="post-neighbor" href="/posts/mamba3-paper-reading/"><div class="post-neighbor-top">上一篇</div><p class="post-neighbor-title">论文阅读：Mamba-3 — 从 SSM 原理出发同时改善质量、能力与效率</p></a><a class="post-neighbor" href="/posts/log-linear-attention-paper-reading/"><div class="post-neighbor-top">下一篇</div><p class="post-neighbor-title">论文阅读：Log-Linear Attention — 基于 Fenwick 树与层次矩阵的对数线性复杂度注意力机制</p></a></div>
       </div>
       <footer>
         <div class="post-footer">2026 ~ Present Shixin Ren 任世鑫</div>

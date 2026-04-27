@@ -147,7 +147,7 @@
               head-extra
             }
 
-            html.link(rel: "preconnect", href: "https://cdn.jsdelivr.net")
+            html.link(rel: "preconnect", href: "https://cdn.jsdelivr.net", crossorigin: "anonymous")
             html.link(rel: "dns-prefetch", href: "https://cdn.jsdelivr.net")
 
             make-theme-preload-script()

@@ -7,5 +7,8 @@
 		"build:preview": "npm run build -- --out _site-preview",
 		"build:preview_fast": "npm run build -- --jobs 4 --out _site-preview",
 		"serve": "npx serve _site -l 11451"
+	},
+	"devDependencies": {
+		"esbuild": "^0.28.0"
 	}
 }

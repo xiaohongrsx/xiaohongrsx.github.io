@@ -84,8 +84,7 @@
   title: "Carbon & Typst Blog",
   lang: "en",
   css: (
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
+    "/assets/core/font.css",
     "/assets/core/colors.css",
     "/assets/core/main.css",
   ),
@@ -194,8 +193,7 @@
   title: "Carbon & Typst Blog",
   lang: "en",
   css: (
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
+    "/assets/core/font.css",
     "/assets/core/colors.css",
     "/assets/core/main.css",
   ),
@@ -311,8 +309,7 @@
   title: "Carbon & Typst Blog",
   lang: "en",
   css: (
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
+    "/assets/core/font.css",
     "/assets/core/colors.css",
     "/assets/core/main.css",
     "/assets/core/pages.css",
@@ -375,8 +372,7 @@
   author: query-input("author", default: none),
   tag-options: (:),
   post-css: (
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
+    "/assets/core/font.css",
     "/assets/core/colors.css",
     "/assets/core/main.css",
   ),
@@ -387,8 +383,7 @@
     "/assets/core/giscus.js",
   ),
   page-css: (
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",
-    "https://cdn.jsdelivr.net/npm/@ibm/plex-mono@1.1.0/css/ibm-plex-mono-all.min.css",
+    "/assets/core/font.css",
     "/assets/core/colors.css",
     "/assets/core/main.css",
     "/assets/core/pages.css",

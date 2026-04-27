@@ -167,3 +167,26 @@
 		gap: 0.1rem;
 	}
 }
+
+/* ===== Comments (Giscus) ===== */
+
+.post-comments {
+	width: 100%;
+	margin: 0 auto 3rem;
+	padding: 0 var(--page-padding-x);
+	box-sizing: border-box;
+}
+
+.post-comments-inner {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+.post-comments .giscus,
+.post-comments .giscus-frame {
+	width: 100%;
+}
+
+.post-comments .giscus {
+	min-height: 8rem;
+}

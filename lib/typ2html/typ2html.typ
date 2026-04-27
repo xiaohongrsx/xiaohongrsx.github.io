@@ -203,6 +203,7 @@
     "/assets/core/render-code.js",
     "/assets/core/theme.js",
     "/assets/core/post-nav-switch.js",
+    "/assets/core/giscus.js",
   ),
   custom-css: (),
   custom-script: (),
@@ -292,6 +293,11 @@
             render-meta(tags, category, date-string-localized, tag-options: tag-options)
           })
         })
+        html.section(class: "post-comments")[
+          #html.div(class: "post-comments-inner")[
+            #html.div(class: "giscus")[]
+          ]
+        ]
       }),
       footer-node: make-post-footer(previous-post: previous-post, next-post: next-post, footer-content: footer-content),
       content,
@@ -378,6 +384,7 @@
     "/assets/core/render-code.js",
     "/assets/core/theme.js",
     "/assets/core/post-nav-switch.js",
+    "/assets/core/giscus.js",
   ),
   page-css: (
     "https://cdn.jsdelivr.net/npm/@ibm/plex-sans@1.1.0/css/ibm-plex-sans-all.min.css",

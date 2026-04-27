@@ -3,5 +3,18 @@
 	"siteUrl": "https://xiaohongrsx.github.io",
 	"author": "Ren Shixin",
 	"description": "Ren Shixin's Blog",
-	"language": "zh-cn"
+	"language": "zh-cn",
+	"giscus": {
+		"repo": "xiaohongrsx/blog-comments",
+		"repoId": "R_kgDOSNr4ig",
+		"category": "Comments",
+		"categoryId": "DIC_kwDOSNr4is4C7yI_",
+		"mapping": "pathname",
+		"strict": "0",
+		"reactionsEnabled": "1",
+		"emitMetadata": "0",
+		"inputPosition": "bottom",
+		"loading": "lazy",
+		"lang": "zh-CN"
+	}
 }

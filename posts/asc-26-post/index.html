@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="generator" content="Typst">
+    <title>ASC26 参赛记录</title>
+    <meta name="date" content="2026-05-21">
+    <link rel="canonical" href="https://xiaohongrsx.github.io/posts/asc-26-post/">
+    <meta property="og:title" content="ASC26 参赛记录">
+    <meta property="og:type" content="article">
+    <meta name="description" content="本文主要介绍 ASC 26比赛之中个人的一些体验和感受">
+    <meta property="og:description" content="本文主要介绍 ASC 26比赛之中个人的一些体验和感受">
+    <meta property="og:url" content="https://xiaohongrsx.github.io/posts/asc-26-post/">
+    <meta name="author" content="Ren Shixin">
+    <meta property="article:author" content="Ren Shixin">
+    <meta name="twitter:card" content="summary">
+    <meta name="language" content="zh">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <script type="text/javascript">
+      (function(){var key='typ-blog-theme';var theme=null;try{var stored=localStorage.getItem(key);if(stored==='gray-10'||stored==='gray-90'||stored==='gray-100'||stored==='white'){theme=stored;}}catch(_){ }if(!theme){theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'gray-90':'gray-10';}document.documentElement.setAttribute('data-theme',theme);var bg=theme==='gray-90'?'#262626':theme==='gray-100'?'#161616':theme==='white'?'#ffffff':'#f4f4f4';document.documentElement.style.backgroundColor=bg;})();
+    </script>
+    <link rel="stylesheet" href="/assets/core/font.css">
+    <link rel="stylesheet" href="/assets/core/colors.css">
+    <link rel="stylesheet" href="/assets/core/main.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+    <script type="module" src="/assets/core/render-code.js"></script>
+    <script type="module" src="/assets/core/theme.js"></script>
+    <script type="module" src="/assets/core/post-nav-switch.js"></script>
+    <script type="module" src="/assets/core/giscus.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header>
+        <div class="site-header">
+          <div class="nav-shell">
+            <nav>
+              <button class="nav-menu-switch" type="button" aria-label="打开导航"></button>
+              <div class="nav-title">Ren Shixin's Blog</div>
+              <div class="nav-body has-post-title">
+                <div class="nav-body-upper">
+                  <div class="nav-body-upper-title">Ren Shixin's Blog</div>
+                  <div class="nav-body-upper-links"><a href="/">首页</a><a href="/posts/">文章</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archive/">归档</a></div>
+                </div>
+                <div class="nav-body-lower">ASC26 参赛记录</div>
+              </div>
+              <button class="nav-theme-switch" type="button" aria-label="切换主题"></button>
+            </nav>
+            <div class="nav-sidebar-backdrop"></div>
+            <aside class="nav-sidebar"><a class="nav-sidebar-item" href="/">首页</a><a class="nav-sidebar-item" href="/posts/">文章</a><a class="nav-sidebar-item" href="/categories/">分类</a><a class="nav-sidebar-item" href="/tags/">标签</a><a class="nav-sidebar-item" href="/archive/">归档</a></aside>
+          </div>
+        </div>
+      </header>
+      <div class="post-header">
+        <div class="post-header-inner">
+          <h1>ASC26 参赛记录</h1>
+        </div>
+      </div>
+      <article>
+        <section>
+          <h2>ASC26 参赛记录</h2>
+          <p>清华大学在 ASC 比赛上已经 5 年没有拿过冠军了，我说这比赛唐完了有没有人相信的。就此机会，不吐不快。</p>
+          <p>我们超算队内部的组织架构是，每2-3个队员负责一个题目，我起初和 SevenDawns 和 platelet 一起负责 AMSS-NCKU 赛题的优化。</p>
+          <p>这题拿出来就是牢完了的，借用浙大的一句话就是，黑哥们牢完了。这题的 baseline 只有发的一个测例上面可以跑得起来。然后分为 GPU 和 CPU 两个版本，确实牢完了就是说。 CPU 本身的速度还是挺快的，但是 GPU 跑完一个测例需要一天。我说全错了。</p>
+          <p>然后我就惊喜的被分到了GPU的优化，本人是弱 vibe coding 使用者，加上本身不会写 CUDA，所以看起来 GPU 程序就颇为困难，我说真烂完了。然后我加上实验室这边还有一些科研压力，所以顺理成章的摆过了一个假期。</p>
+          <p>然后组委会也是问各种问题都会给你回答模棱两可的回复，十分令人讨厌。可以说就是扔了一个屎山过来让我们修改。但是这并非本篇博客要说的重点，我想说的是，目前 AI 对于超算比赛的冲击。</p>
+          <p>已经见到的是， AI 对于算法竞赛的冲击无比巨大，原先的教练-选手-模拟赛形式可以被AI-选手的形式代替。据我所知已经有初一小孩子仅凭 AI agent 定制训练算法竞赛就可以拿到 NOIP 省一。</p>
+          <p>AI 对于超算比赛的冲击同样大，几乎可以说这次 ASC 比赛就是各个学校之间的 agent 大战，有的学校甚至在学校的机房里面搭了一个 AI中转站，以此来应对比赛中对于高并发agent的场景。</p>
+          <p>可惜 ASC 本身是比哪个学校可以优化的更没底线一些，有的学校可以对推理加速题做后训练，还有的学校可以使用某种方法违规用电而不被发现，还有的学校使用 nvlink 把两张卡不合法的拼装在一起，甚至机箱盖都没办法合上去，真是群魔乱舞，令人汗颜。</p>
+          <p>还要说的是，团队建设相关的一些问题，我们可以遇见的是，团队并非一个整体，但是如果出现了队员不通知老师，场内与场外隔绝，有人自以为是的去做了一些事情，用 intel 的功耗控制脚本来控制 AMD 显卡就是个好笑的事情。就算是退一步说，认为对祖宗保证敬畏是每个人应该做的事情。</p>
+          <p>还有一个想说的是，技术的壁垒导致超算技术发展缓慢，这一点上有两个队伍尤为严重，不说是哪两个了，反正唐完了。再也不会去打 ASC 了，这比赛整个折磨人来的。</p>
+          <div class="post-meta">
+            <div class="post-tag"><span class="post-tag-desc">标签</span><span class="post-tag-group"><a class="post-tag-item tag-item-with-icon" href="/tags/写作指南/" style="--tag-background:var(--tag-background-blue);--tag-color:var(--tag-color-blue);--tag-background-hover:var(--tag-hover-blue);--tag-border:var(--tag-border-blue);--tag-border-hover:var(--tag-border-blue);"><span class="tag-icon" style="mask-image:url(&quot;/assets/icons/edit.svg&quot;);"></span><span class="tag-content"><span>写作指南</span></span></a></span></div>
+            <div class="post-time"><span class="post-time-desc">日期</span><span>2026 年 5 月 21 日</span></div>
+            <div class="post-category"><span class="post-category-desc">分类</span><a class="post-category-link" href="/categories/随笔/">随笔</a></div>
+          </div>
+        </section>
+      </article>
+      <section class="post-comments">
+        <div class="post-comments-inner">
+          <div class="giscus"></div>
+        </div>
+      </section>
+      <div class="post-neighbors">
+        <div class="post-neighbors-inner"><a class="post-neighbor" href="/posts/log-linear-attention-paper-reading/"><div class="post-neighbor-top">上一篇</div><p class="post-neighbor-title">论文阅读：Log-Linear Attention — 基于 Fenwick 树与层次矩阵的对数线性复杂度注意力机制</p></a></div>
+      </div>
+      <footer>
+        <div class="post-footer">2026 ~ Present Shixin Ren 任世鑫</div>
+      </footer>
+    </div>
+  </body>
+</html>

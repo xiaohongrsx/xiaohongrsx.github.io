@@ -5,7 +5,16 @@
   <link>https://xiaohongrsx.github.io/</link>
   <description>Ren Shixin&apos;s Blog</description>
   <language>zh-cn</language>
-  <lastBuildDate>Mon, 30 Mar 2026 20:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 21 May 2026 19:00:00 GMT</lastBuildDate>
+  <item>
+    <title>ASC26 参赛记录</title>
+    <link>https://xiaohongrsx.github.io/posts/asc-26-post/</link>
+    <guid isPermaLink="true">https://xiaohongrsx.github.io/posts/asc-26-post/</guid>
+    <pubDate>Thu, 21 May 2026 19:00:00 GMT</pubDate>
+    <description>本文主要介绍 ASC 26比赛之中个人的一些体验和感受</description>
+    <category domain="category">随笔</category>
+    <category domain="tag">写作指南</category>
+  </item>
   <item>
     <title>论文阅读：Log-Linear Attention — 基于 Fenwick 树与层次矩阵的对数线性复杂度注意力机制</title>
     <link>https://xiaohongrsx.github.io/posts/log-linear-attention-paper-reading/</link>
